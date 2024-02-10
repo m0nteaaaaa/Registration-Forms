@@ -1,0 +1,193 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.form_container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 5%;
+    border: 4px solid black;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.title h1 {
+    font-size: 40px;
+}
+
+.title h2 {
+    font-size: 30px;
+}
+
+.heading {
+    display: flex;
+    text-transform: uppercase;
+}
+
+.index {
+    display: flex;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+    align-items: center;
+}
+
+.box {
+    align-items: center;
+    border: 2px solid black;
+    height: 165px;
+    width: 183px;
+}
+
+p {
+    margin: 10px;
+    font-weight: bolder;
+}
+
+.form_control {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.college,
+.mfd {
+    margin-top: 30px;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 25px;
+}
+
+.form_control {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.form_control label {
+    flex: 1;
+    text-align: left;
+    margin-right: 20px;
+}
+
+.form_control input,
+.form_control textarea,
+.form_control select {
+    height: 30px;
+    border: 1px solid;
+    flex: 1.5;
+    margin-top: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.address_control {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.address_control label {
+    flex: 3;
+    text-align: left;
+    margin-right: 20px;
+}
+
+.info {
+    font-size: 20px;
+}
+
+.upload {
+    padding: 10px;
+}
+
+.date {
+    font-size: 17px;
+}
+
+.button_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+button {
+    background-color: #ccc;
+    border: transparent solid 2px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    color: black;
+    transition: 0.3s, ease-in;
+    font-size: 15px; /* Added font size */
+}
+
+button:hover {
+    background-color: #ccc;
+    border: 2px solid black;
+    color: black;
+    transition: 0.3s, ease-out;
+    cursor: pointer;
+}
+
+/* Media queries for responsiveness */
+
+@media screen and (max-width: 768px) {
+    .form_container {
+        padding: 10px;
+    }
+
+    .title h1 {
+        font-size: 30px;
+    }
+
+    .title h2 {
+        font-size: 25px;
+    }
+
+    .form_control input,
+    .form_control textarea,
+    .form_control select {
+        height: 40px;
+    }
+
+    .button_container {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .form_container {
+        padding: 5px;
+    }
+
+    .title h1 {
+        font-size: 25px;
+    }
+
+    .title h2 {
+        font-size: 20px;
+    }
+
+    .form_control input,
+    .form_control textarea,
+    .form_control select {
+        height: 50px;
+    }
+    .index{
+        display: flex;
+        flex-direction: column;
+    }
+    .info{
+        margin-bottom: 20px;
+    }
+    .upload{
+        margin-bottom: 20px;
+    }
+}
